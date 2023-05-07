@@ -19,6 +19,6 @@ public abstract class Menu {
     }
     public abstract double price();
     public int getQuantity() {
-        return quantity;
+        return quantity + 1;
     }
 }

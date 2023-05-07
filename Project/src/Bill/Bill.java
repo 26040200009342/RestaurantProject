@@ -24,4 +24,5 @@ public abstract class Bill extends Menu{
         }
         System.out.printf("Total: %.2f\n", total);
     }
+    
 }
