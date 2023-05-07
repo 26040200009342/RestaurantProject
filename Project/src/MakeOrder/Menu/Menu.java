@@ -11,15 +11,14 @@ public abstract class Menu {
         this.menu=menu;
         this.quantity=quantity;
     }
-    public abstract  void getMenu();
-    public double price(int num,int quantity){
-        return totalPrice;
+    public String getMenu() {
+        return menu;
     }
-
-
-    public String toString(){
-        return String.format("\n%s     %d piece  ",menu,quantity);
+    public double getPrice() {
+        return quantity * totalPrice;
     }
-
-
+    public abstract double price();
+    public int getQuantity() {
+        return quantity;
+    }
 }
